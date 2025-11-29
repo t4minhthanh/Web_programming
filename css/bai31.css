@@ -1,0 +1,23 @@
+/* Cách dùng dấu + */
+/* a + b thì code sẽ định dạng b với điều kiện b ngay sau a */
+h1 + h2 {
+  color: red;
+  background-color: red;
+}
+.demo + h3 {
+  background-color: aqua;
+}
+.demo.demo2 + h3 {
+  color: red;
+  background-color: blue;
+}
+
+/* Cách dùng dấu ~ */
+/* a ~ b thì code định dạng tất cả b thỏa mãn điều kiện b sau a (Lưu ý: b chỉ cần sau a) */
+h1 ~ h3 {
+  color: aquamarine;
+}
+div ~ div {
+  color: blueviolet;
+}
+
