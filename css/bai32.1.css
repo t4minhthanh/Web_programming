@@ -1,0 +1,18 @@
+/* a[href] {
+  color: blue;
+} */
+/* Tác động lên thẻ a có thuộc tính href */
+
+p[href] {
+  color: rgb(168, 84, 84);
+}
+/* Tác động lên thẻ p có thuộc tính href */
+
+[target="_blank"] {
+  color: brown;
+}
+/* Tác động chính xác vào target có thuộc tính blank */
+[target="_self"] {
+  color: aqua;
+}
+/* Tác động chính xác vào target có thuộc tính sefl */
