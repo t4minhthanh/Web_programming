@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bai32.2.css" />
+    <title>Bài 32.2</title>
+  </head>
+  <body>
+    <a href="home.html">Home</a>
+    <hr />
+    <h1>Bài 32.2. Attribute selectors</h1>
+    <hr />
+    <h2>Nội dung:</h2>
+    <pre><code>
+        [title~=&quot;tuhoc.cc&quot;] {
+        color: red;
+        }
+        /* Code tác động vào tất cả các thẻ title có phần giá trị chứa đúng từ tuhoc.cc */
+
+        [title*=&quot;b&quot;] {
+        color: aqua;
+        }
+        /* Code tác động vào tất cả các thẻ title có phần giá trị chỉ cần có chữ b */
+
+        [title|=&quot;pic&quot;] {
+        color: red;
+        }
+        /* Code tác động vào tất cả các thẻ title có phần giá trị bắt đầu bằng từ pic một mình hoặc từ pic gạch ngang rồi + các giá trị khác (VD: pic-123df) */
+
+        [title^=&quot;123&quot;] {
+        color: blue;
+        }
+        /* Code tác động vào tất cả các thẻ title có phần giá trị bắt đầu bằng từ 123 (VD: 123; 123sdfasd; 123 df ds-3) */
+
+        [title$=&quot;1&quot;] {
+        color: blueviolet;
+        }
+        /* Code tác động vào tất cả các thẻ title có phần giá trị kết thúc bằng kí tự 1 */
+    </code></pre>
+    <hr />
+    <!-- Code -->
+    <a href="http://tuhoc.cc" target="_blank" title="tuhoc.cc trang chủ"
+      >Click vào em đi 1</a
+    >
+    <a href="http://tuhoc.cc" target="_self" title="tuhoc.ccb trang chủ"
+      >Click vào em đi 2</a
+    >
+    <a href="http://tuhoc.cc">Click vào em đi 3</a>
+    <p href>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="" title="pic">Click tes1t</a><br />
+    <a href="" title="pic">Click test2</a><br />
+    <a href="" title="123 pic1 23">Click test3</a><br />
+    <a href="" title="123p i c">Click test4</a><br />
+    <a href="" title="123p i c">Click test5</a><br />
+    <a href="" title="123p i 1">Click test6</a><br />
+  </body>
+</html>

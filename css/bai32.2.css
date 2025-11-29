@@ -1,0 +1,21 @@
+[title~="tuhoc.cc"] {
+  color: red;
+}
+/* Code tác động vào tất cả các thẻ title có phần giá trị chứa đúng từ tuhoc.cc */
+
+[title*="b"] {
+  color: aqua;
+}
+/* Code tác động vào tất cả các thẻ title có phần giá trị chỉ cần có chữ b */
+[title|="pic"] {
+  color: red;
+}
+/* Code tác động vào tất cả các thẻ title có phần giá trị bắt đầu bằng từ pic một mình hoặc từ pic gạch ngang rồi + các giá trị khác (VD: pic-123df) */
+[title^="123"] {
+  color: blue;
+}
+/* Code tác động vào tất cả các thẻ title có phần giá trị bắt đầu bằng từ 123 (VD: 123; 123sdfasd; 123 df ds-3) */
+[title$="1"] {
+  color: blueviolet;
+}
+/* Code tác động vào tất cả các thẻ title có phần giá trị kết thúc bằng kí tự 1 */
