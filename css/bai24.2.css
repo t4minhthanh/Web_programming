@@ -1,0 +1,9 @@
+input:checked ~ a {
+  display: none;
+}
+input:checked ~ pre {
+  display: none;
+}
+input:checked ~ img {
+  display: none;
+}

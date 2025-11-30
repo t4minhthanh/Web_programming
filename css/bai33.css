@@ -1,0 +1,14 @@
+#noi_dung_bai_hoc {
+  font-size:20px;
+  color:red;
+}
+
+p:hover{
+    color:red;
+}
+/* Khi di chuột đến thẻ p thì nội dung của thẻ sẽ chuyển sang màu đỏ */
+
+.di-chuot:active{
+    color:aqua;
+}
+/* Khi nhấn giữ chuột vào nội dung của class .di-chuột thì nội chung của class sẽ đổi màu */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bai33.css" />
+    <title>Bài 33</title>
+  </head>
+  <body>
+    <a href="home.html">Home</a>
+    <hr />
+    <h1>Bài 33. Lớp giả (CSS Pseudo-classes)</h1>
+    <hr />
+    <h2>Nội dung bài học:</h2>
+    Link đến trang cung cấp kiến thức:
+    <a
+      href="https://www.w3schools.com/cssref/css_ref_pseudo_classes.php"
+      target="_blank"
+      >w3chools</a
+    >
+    <pre><code>
+    <p id="noi_dung_bai_hoc">
+    Lớp giả CSS là một từ khóa có thể được thêm vào bộ chọn để xác định kiểu cho trạng thái đặc biệt của một phần tử.
+    Một số cách sử dụng phổ biến cho lớp giả:
+        - Tạo kiểu cho một phần tử khi người dùng di chuyển chuột qua nó
+        - Kiểu liên kết đã truy cập và chưa truy cập khác nhau
+        - Tạo kiểu cho một phần tử khi nó được chú ý
+        - Kiểu các thành phần biểu mẫu hợp lệ/không hợp lệ/bắt buộc/tùy chọn
+        - Định kiểu cho một phần tử là phần tử con đầu tiên của phần tử cha của nó
+    Cú pháp:
+        Các lớp giả luôn được biểu thị bằng dấu hai chấm (:) theo sau là tên lớp giả:
+            selector:pseudo-class-name {
+                CSS properties
+            }
+    Các lớp giả thông dụng:
+        p:hover{
+            color:red;
+        }
+        /* Khi di chuột đến thẻ p thì nội dung của thẻ sẽ chuyển sang màu đỏ */
+        ---------------------------
+        .di-chuot:active{
+            color:aqua;
+        }
+        /* Khi nhấn giữ chuột vào nội dung của class .di-chuot thì nội chung của class sẽ đổi màu */
+ </p>
+ </code>
+    </pre>
+    <hr />
+    <!-- --------------------------- -->
+    <p>Xin chào</p>
+    <p class="di-chuot">Hãy di chuột qua em</p>
+  </body>
+</html>
