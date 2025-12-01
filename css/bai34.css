@@ -1,0 +1,17 @@
+input:checked~pre{
+    display:none;
+}
+input:checked+div{
+    display:none;
+}
+/* ---------------------------------*/
+
+.click_me:link{
+    color:rgb(190, 188, 90);
+}
+/* Code định dạng kiểu cho đường link khi người dùng chưa truy cập */
+
+.click_me:visited{
+    color:red;
+}
+/* Code định dạng kiểu cho đường link người dùng đã truy cập */
